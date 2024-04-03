@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.8)
+project (cdeque_test)
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -g -O0")
+add_executable(cdeque_test cdeque_test.c cdeque.c)
